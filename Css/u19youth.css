@@ -1,0 +1,276 @@
+body{
+     margin:0;
+	 font-family:Arial, Helvetica, sans-serif;
+	 background:#F5F5F5;
+	 color:#222;
+	}
+	
+	h1,h2{
+	   margin:0;
+	}
+	
+	section{
+	    padding:50px 8%;
+	}
+	
+/* ==========================
+   NAVIGATION
+========================== */
+
+header{
+    background:#006b3c;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 10%;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+}
+
+.logo h1{
+    color:white;
+    font-size:28px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:30px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#d9ffd9;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-text h1{
+    color:white;
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    color:white;
+    font-size:24px;
+    margin-bottom:35px;
+}
+
+.button{
+    background:white;
+    color:#006b3c;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.button:hover{
+    background:#006b3c;
+    color:white;
+    border:2px solid white;
+}
+	
+	/* TEAM BANNER */
+	
+  .team-banner{
+    height:500px;
+	background-image:linear-gradient(rgba(0,70,20,0.6), rgba(0,70,20,0.6)),
+	                 url('u19youths.jpg'); 
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    color:white;
+}
+
+.banner-content h1{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+.banner-content p{
+    font-size:24px;
+}
+	 
+	 /* TEAM LEADERSHIP */
+
+.leadership{
+    text-align:center;
+}
+
+.leadership h2{
+    color:#1B5E20;
+    margin-bottom:40px;
+}
+
+.leadership-container{
+    display:flex;
+    justify-content:center;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.leader-card{
+    background:#FFFFFF;
+    width:260px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 18px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.leader-card:hover{
+    transform:translateY(-6px);
+}
+
+.leader-card img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #2E7D32;
+    margin-bottom:20px;
+}
+
+.leader-card h3{
+    color:#1B5E20;
+    margin-bottom:8px;
+}
+
+.leader-card p{
+    color:#555;
+    font-size:17px;
+}
+	 
+	 /* PLAYER SECTION */
+
+.players h2{
+    color:#1B5E20;
+    font-size:2rem;
+    margin-bottom:25px;
+}
+
+/* GRID */
+
+.player-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+/* PLAYER CARD */
+
+.player-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 6px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.player-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.player-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.player-details{
+    padding:20px;
+    text-align:center;
+}
+
+.player-details h3{
+    color:#1B5E20;
+    margin-bottom:8px;
+}
+
+.player-details p{
+    margin:6px 0;
+    color:#555;
+}
+
+/* TEAM STATS */
+
+.team-stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.stat-box{
+    background:#2E7D32;
+    color:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.stat-box h2{
+    font-size:2.5rem;
+}
+
+.stat-box p{
+    margin-top:8px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#1B5E20;
+    color:white;
+    text-align:center;
+    padding:30px;
+}

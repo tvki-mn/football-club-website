@@ -1,0 +1,200 @@
+/* General */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f8f4;
+    color:#333;
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+
+.main-header{
+    background:#006b3c;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 10%;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+}
+
+.logo h1{
+    color:white;
+    font-size:28px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:30px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#d9ffd9;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-text h1{
+    color:white;
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    color:white;
+    font-size:24px;
+    margin-bottom:35px;
+}
+
+.button{
+    background:white;
+    color:#006b3c;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.button:hover{
+    background:#006b3c;
+    color:white;
+    border:2px solid white;
+}
+
+/* Header */
+.page-header{
+    text-align:center;
+    background:#0b6b3a;
+    color:white;
+    padding:60px 20px;
+}
+
+.page-header h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.page-header p{
+    font-size:20px;
+}
+
+/* Team Sections */
+.team-section{
+    width:85%;
+    margin:50px auto;
+    display:flex;
+    align-items:center;
+    gap:40px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* Images */
+.team-section img{
+    width:450px;
+    height:300px;
+    object-fit:cover;
+}
+
+/* Team Info */
+.team-info{
+    padding:20px;
+}
+
+.team-info h2{
+    color:#0b6b3a;
+    font-size:36px;
+    margin-bottom:20px;
+}
+
+.team-info p{
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+/* Button */
+.btn{
+    display:inline-block;
+    background:#0b6b3a;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:8px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#12824b;
+}
+
+/* Mobile */
+@media (max-width:900px){
+
+    .team-section{
+        flex-direction:column;
+    }
+
+    .team-section img{
+        width:100%;
+        height:250px;
+    }
+
+    .team-info{
+        text-align:center;
+    }
+}

@@ -1,0 +1,214 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7f5;
+    color:#333;
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+
+.main-header{
+    background:#006b3c;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 10%;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+}
+
+.logo h1{
+    color:white;
+    font-size:28px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:30px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active{
+    color:#9be28f;
+}
+
+/* Hero Section */
+
+.hero{
+    background:linear-gradient(rgba(0,80,40,0.8), rgba(0,80,40,0.8)),
+    url("banner.png");
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    color:white;
+    padding:90px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+/* Team Buttons */
+
+.team-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:40px 0;
+}
+
+.team-buttons a{
+    text-decoration:none;
+    background:#198754;
+    color:white;
+    padding:12px 28px;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.team-buttons a:hover{
+    background:#0d5c2f;
+    transform:translateY(-3px);
+}
+
+/* Team Sections */
+
+.team-section{
+    width:90%;
+    max-width:1200px;
+    margin:50px auto;
+}
+
+.team-section h2{
+    background:#0d7a3d;
+    color:white;
+    padding:15px 20px;
+    border-radius:8px 8px 0 0;
+    font-size:28px;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    overflow:hidden;
+    border-radius:0 0 8px 8px;
+}
+
+thead{
+    background:#198754;
+    color:white;
+}
+
+th,
+td{
+    padding:15px;
+    text-align:center;
+}
+
+tbody tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+tbody tr:hover{
+    background:#e7f6eb;
+    transition:0.3s;
+}
+
+/* Status Colours */
+
+.upcoming{
+    color:#0d6efd;
+    font-weight:bold;
+}
+
+.win{
+    color:#198754;
+    font-weight:bold;
+}
+
+.loss{
+    color:#dc3545;
+    font-weight:bold;
+}
+
+.draw{
+    color:#6c757d;
+    font-weight:bold;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+table{
+    display:block;
+    overflow-x:auto;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.team-section h2{
+    font-size:22px;
+}
+
+th,
+td{
+    padding:12px;
+    font-size:14px;
+}
+
+}

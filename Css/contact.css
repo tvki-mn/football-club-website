@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+
+/* Navigation */
+
+header {
+    background-color: #0b5d1e;
+    color: white;
+    padding: 20px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+    color: #b7e4c7;
+}
+
+
+/* Hero */
+
+.contact-hero {
+	background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("bisini.jpg");
+    background-color: #064d17;
+    color: white;
+    text-align: center;
+    padding: 70px 20px; 
+}
+
+.contact-hero h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.contact-hero p {
+    font-size: 18px;
+}
+
+
+/* Main container */
+
+.contact-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 50px;
+}
+
+
+/* Contact information */
+
+.contact-info h2,
+.contact-form h2 {
+    color: #0b5d1e;
+    margin-bottom: 20px;
+}
+
+.contact-info > p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.info-box {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-left: 5px solid #0b5d1e;
+    border-radius: 5px;
+}
+
+.info-box h3 {
+    color: #0b5d1e;
+    margin-bottom: 8px;
+}
+
+
+/* Form */
+
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* Button */
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #0b5d1e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #064d17;
+}
+
+
+/* Form message */
+
+#formMessage {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #0b5d1e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-hero h1 {
+        font-size: 35px;
+    }
+}
